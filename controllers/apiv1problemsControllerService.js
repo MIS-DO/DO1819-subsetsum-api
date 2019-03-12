@@ -3,8 +3,7 @@ const sumService = require('@haensl/subset-sum');
 
 module.exports.newProblem = function newProblem(req, res, next) {
   var problemRequest = req.problem.value;
-  console.log(problemRequest);
-
+  
   //time
   var beginHR = process.hrtime()
   var begin = beginHR[0] * 1000000 + beginHR[1] / 1000;
