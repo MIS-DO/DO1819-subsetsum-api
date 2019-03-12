@@ -188,9 +188,7 @@ function problemGeneration(numberInArray, targetSum) {
   const n = numberInArray || 100; // Numbers in array
   const s = targetSum || 100; // Target sum
 
-  var items = [];
-
-  Array.from({ length: n }, () => Math.floor(Math.random()));
+  var items = Array.from({ length: n }, () => Math.floor(Math.random()*targetSum));
   return {
     items: items,
     sum: s
